@@ -5,5 +5,7 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 source $SCRIPTPATH/common.sh
 source_app_env $app $environ
 
+echo "$app"
+
 set -e
 # dklogin
