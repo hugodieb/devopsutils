@@ -8,4 +8,4 @@ source_app_env $app $environ
 echo "Estou no devopslogin"
 
 set -e
-# dklogin
+server_login

@@ -16,7 +16,7 @@ source_app_env() {
     fi
 }
 
-dklogin() {
+server_login() {
     if [ ! "$AWS_PROFILE" ]; then
         AWS_PROFILE=default
     fi
