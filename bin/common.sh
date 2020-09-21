@@ -17,6 +17,7 @@ source_app_env() {
 }
 
 server_login() {
+    echo "Estou no server_login"
     if [ ! "$AWS_PROFILE" ]; then
         AWS_PROFILE=default
     fi
