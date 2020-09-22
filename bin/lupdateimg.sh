@@ -13,6 +13,7 @@ function vaiupdate(){
     host=$1
     set -e
     linstall_dockerutils_remote.sh $host
+    echo "[UPDATEIMG] passei pelo linstall_dockerutils_remote"
     ssh -o StrictHostKeyChecking=no $host devopsutils/remotebin/updateimg.sh $app $version $environ
     echo "[UPDATEIMG] imagem atualizada no host $host"
 }
