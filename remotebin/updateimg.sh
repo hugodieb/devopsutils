@@ -8,6 +8,6 @@ source $SCRIPTPATH/common.sh
 source_env_app $app $environ
 
 set -e
-dklogin
+server_login
 dkpull $app $version $environ
-$SCRIPTPATH/pullconfig.sh $app $environ
+#$SCRIPTPATH/pullconfig.sh $app $environ
