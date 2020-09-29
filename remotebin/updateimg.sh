@@ -10,4 +10,4 @@ source_app_env $app $environ
 set -e
 server_login
 dkpull $app $version $environ
-$SCRIPTPATH/pullconfig.sh $app $environ
+#$SCRIPTPATH/pullconfig.sh $app $environ
