@@ -13,7 +13,7 @@ dkstopstart(){
     containername=${canonized_app}_${environ}_${service}
     dkdata="$HOME/dockerdata/${app}_${environ}"
     image=$app:$environ
-    envfile=~/${canonized_app}_${environ}.env
+    envfile=~/${canonized_app}.env
     docker exec $containername stop_${service}.sh || true
     docker stop $containername || true
     docker rm $containername || true
