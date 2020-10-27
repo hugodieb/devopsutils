@@ -10,7 +10,7 @@ source_app_env $app $environ
 dkmigratedb(){
     containername=${app}_${environ}_migratedb
     image=$app:$environ
-    envfile=~/${app}_${environ}.env
+    envfile=~/${app}.env
     docker run --rm --name=$containername --env-file=$envfile $image migratedb.sh
     exitcode=$?
     return $exitcode
