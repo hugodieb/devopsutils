@@ -18,6 +18,7 @@ dkstopstart(){
     docker stop $containername || true
     docker rm $containername || true
     echo "stopstart with $DKPARAMS"
+    echo "dkdata $dkdata"
     docker run $DKPARAMS -d --name=$containername --env-file=$envfile -v $dkdata:/dkdata $image start_${service}.sh
     if [ -d ~/env-fronttest ]; then
         docker cp ~/env-fronttest/.env $containername:/app/frontend
